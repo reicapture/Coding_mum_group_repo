@@ -3,11 +3,114 @@
 
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>Untitled 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+<link rel="stylesheet" type="text/css" href="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\css\style.css"/>
+<title>Sawarna Sablon</title>
 </head>
 
 <body>
+<div id="headlogo">
+<img ="sawarnalogo" src="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\image\Sawarna Sablon logo.jpg" style="float:left;width:100px;height:60px;" />
+</div>
+<br/><br/><br/><br/>
 
+<div class="w3-content" style="max-width:800px;position:relative">
+
+<img class="mySlides" src="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\image\slide1.jpg" style="width:100%"/>
+<img class="mySlides" src="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\image\slide2.jpg" style="width:100%"/>
+<img class="mySlides" src="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\image\slide3.jpg" style="width:100%"/>
+<img class="mySlides" src="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\image\slide4.jpg" style="width:100%"/>
+
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+</div>
+
+<ul>
+  <li><a class="active" href="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\beranda.html">Beranda</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Produk</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\kaos.html">Kaos</a>
+      <a href="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\topi.html">Topi</a>
+    </div>
+  </li>
+</ul>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+<div id="footer">
+<footer>
+<h6>Kontak Kami</h6>
+
+<div class="image">
+<a href="http://facebook.com"><img src="C:\Users\Riki\Desktop\coding_mums\coding_mums_repo\image\FaceBook-icon.png" width="20px" height="20px" /> </a>
+<a href="http://twitter.com"><img src="C:\Users\Riki\Desktop\coding_mums\coding_mums_repo\image\Twitter-logo2.png" width="20px" height="20px" /> </a>
+<a href="http://instagr.am"><img src="C:\Users\Riki\Desktop\coding_mums\coding_mums_repo\image\Uiconstock-Socialmedia-Instagram.ico" width="20px" height="20px" /> </a>
+</div>
+
+</footer>
+</div>
+
+
+
+
+
+<!--SLIDER HEAD-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+<!--NAVIGATION BAR-->
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </body>
+
 
 </html>
