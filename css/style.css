@@ -56,11 +56,20 @@ li.dropdown {
 
 .show {display:block;}
 
+#myBtn {
+	float: right;
+	margin-right: 1.5%;
+	margin-top: -3%;
+}
+
+
+/*CART IMAGE DOANG
 #cart {
 	text-align: right;
 	padding-right: 1.5%;
 	margin-top: -2.75%;
 }
+*/
 
 /*CART POP UP*/
 /* The Modal (background) */
@@ -84,7 +93,6 @@ li.dropdown {
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
@@ -109,8 +117,7 @@ li.dropdown {
     color: white;
     float: right;
     font-size: 28px;
-    font-weight: bold;
-    padding: 3%;
+    font-weight: bold;    
 }
 
 .close:hover,
@@ -180,6 +187,7 @@ td {
     content: "";
     clear: both;
     display: block;
+    
 }
 [class*="col-"] {
     float: left;

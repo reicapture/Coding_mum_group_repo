@@ -1,12 +1,37 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Sawarna Sablon</title>
-    <link rel="stylesheet" type="text/css" href="css/styletopi.css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+<link rel="stylesheet" type="text/css" href="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\css\style.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Sawarna Sablon</title>
 </head>
 
 <body>
+<div id="namatoko">
+<strong>Sawarna Sablon</strong>
+</div>
+
+<!--NAVIGATION BAR-->
+<ul>
+  <li><a class="active" href="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\beranda.html"><strong>
+  Beranda</strong></a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()"><strong>
+	Produk</strong></a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\kaos.html"><strong>
+		Kaos</strong></a>
+      <a href="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\topi.html"><strong>
+		Topi</strong></a>
+    </div>
+  </li>
+</ul>
+
 
 <!-- BukaKodeTopi -->
 
@@ -54,6 +79,55 @@
 </div>
 
 <!-- TutupKodeTopi -->
+
+<!--FOOTER-->
+<div class="row">
+	<div class="col-6">
+		<h5><strong>Kontak Kami</strong></h5>
+		<a href="https://www.facebook.com/neymar.d.santos.5688"><img src="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\image\FaceBook-icon.png" width="20px" height="20px" /></a> Sawarna Sablon
+		<br/>
+		<img src="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\image\BBM_Logo.png" width="20px" height="20px" /> 5B9C78B9
+		<br/>
+		<img src="C:\Users\Riki\Desktop\coding_mum_group\Coding_mum_group_repo\image\WhatsApp_Logo_6.png" width="20px" height="20px" /> +62 85719536683
+	</div>
+
+	<div class="col-6">
+		<h5><strong>Sawarna Sablon</strong></h5>
+		<p>Adalah perusahaan yang bergerak dibidang garment, yang memproduksi bermacam – macam kaos, kemeja, Rompi, Jaket Dll. Untuk Kebutuhan Komunitas, Perusahaan, Promosi Dan Cendera Mata, Dengan kriteria, sablon manual, automatis dan berbagai bordir. Perusahaan kami sudah Berpengalaman bergerak dibidangnya, Kami mempunyai beberapa mesin, konveksi dan tenaga yang ahli dibidangnya. Sehingga kami dapat menjadi supplier handal dalam memenuhi kebutuhan konsumen. </p>
+	</div>
+</div>
+
+<div class="footer">
+</div>
+
+<div id="copyright">
+<p>Copyright © 2016 | RenRinDah</p>
+</div>
+
+
+
+<!--NAVIGATION BAR-->
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 </body>
 
